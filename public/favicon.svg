@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="50%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#d4d4d8"/>
+      <stop offset="100%" stop-color="#71717a"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Squircle Base (iOS app icon radius) -->
+  <rect width="512" height="512" rx="115" fill="url(#bgGrad)"/>
+  <rect x="8" y="8" width="496" height="496" rx="108" fill="none" stroke="#27272a" stroke-width="4"/>
+  <circle cx="256" cy="180" r="160" fill="url(#glowGrad)"/>
+
+  <!-- Barbell Bar -->
+  <rect x="110" y="244" width="292" height="24" rx="12" fill="url(#metalGrad)"/>
+
+  <!-- Outer Plates -->
+  <rect x="130" y="176" width="30" height="160" rx="14" fill="url(#metalGrad)"/>
+  <rect x="352" y="176" width="30" height="160" rx="14" fill="url(#metalGrad)"/>
+
+  <!-- Inner Plates -->
+  <rect x="172" y="196" width="22" height="120" rx="10" fill="#a1a1aa"/>
+  <rect x="318" y="196" width="22" height="120" rx="10" fill="#a1a1aa"/>
+
+  <!-- Center Lightning Bolt (Power) -->
+  <path d="M266 120 L220 252 L260 252 L246 392 L298 238 L256 238 Z" fill="#ffffff" filter="drop-shadow(0px 4px 12px rgba(255,255,255,0.4))"/>
+
+  <!-- AuraFit text badge -->
+  <text x="256" y="440" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="34" font-weight="800" fill="#e4e4e7" text-anchor="middle" letter-spacing="4">AURAFIT</text>
+</svg>
